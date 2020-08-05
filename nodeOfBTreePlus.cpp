@@ -538,7 +538,7 @@ void NodeOfBTreePlus::receiveNodeToInsertFromDownside
             }
             for (int index = middle+1; index < vectorOfPointers.size(); ++index)
             {
-                vectorOfPointers[index]->father = right;
+                vectorOfPointers[index]->father = rightMe;
                 rightMe->vectorOfPointers.push_back(vectorOfPointers[index]);
             }
 

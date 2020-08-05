@@ -18,6 +18,7 @@ void BTreePlus::dealockNodeOfBTrees()
     {
         root->dealockSubTree();
         delete root;
+        root = nullptr;
     }
 }
 
@@ -163,6 +164,8 @@ bool BTreePlus::insert(int number)
         root = new NodeOfBTreePlus(nullptr, this->degree);
         initialChildren = root;
     }
+
+    clearLeafChain();//update
     bool ret = root->insert(number);
 
     //para atualizar leafs

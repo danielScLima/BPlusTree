@@ -297,3 +297,25 @@ TEST_CASE( "Testing the insertion of duplicated entries", "[single-file]" )
 	REQUIRE(!b.insert(75));
 	REQUIRE(!b.insert(35));
 }
+
+TEST_CASE( "Testing the insertion of one hundred elements", "[single-file]" )
+{
+	BTreePlus b (5);
+	
+	std::vector<int> vec =
+	{
+		96, 54, 34, 75, 64, 23, 11, 85, 61, 37, 97, 15, 38, 40, 33, 57, 16, 1, 
+		51, 65, 28, 76, 66, 25, 30, 42, 90, 24, 7, 95, 83, 73, 71, 45, 39, 10, 
+		41, 79, 21, 2, 5, 35, 17, 13, 81, 58, 4, 82, 32, 88, 36, 78, 18, 99, 46, 
+		43, 8, 22, 59, 87, 19, 77, 49, 53, 67, 6, 12, 93, 74, 98, 60, 3, 84, 26, 
+		80, 20, 62, 72, 89, 56, 9, 29, 92, 14, 48, 27, 68, 31, 47, 52, 0, 63, 
+		50, 69, 55, 70, 86, 91, 94, 44
+	};
+	
+	bool ret = true;
+	for (int index=0;index < vec.size(); ++index)
+	{
+		ret = b.insert(40);
+		REQUIRE(ret);
+	}
+}

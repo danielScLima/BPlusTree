@@ -14,7 +14,7 @@ public:
      * \brief BTreePlus
      * \param degree
      */
-    BTreePlus(int degree = 4);
+    BTreePlus(int degree = 5);
     
     ~BTreePlus();
     
