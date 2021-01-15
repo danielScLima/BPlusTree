@@ -1,5 +1,7 @@
 BPlus Tree
 ====================
+Building with AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/97p9s3sr3hcyfp1p?svg=true)](https://ci.appveyor.com/project/DanielSLima/bplustree)
+
 Building with Travis: [![Build Status](https://www.travis-ci.com/danielScLima/BPlusTree.svg?branch=master)](https://www.travis-ci.com/danielScLima/BPlusTree)
 
 This repository has a project with the implementation of a BPlus Tree.
