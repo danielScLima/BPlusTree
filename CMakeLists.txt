@@ -8,8 +8,8 @@ add_library(
 	libbtreeplus
 	nodeOfBTreePlus.h
 	nodeOfBTreePlus.cpp
-	btreePlus.h
-	btreePlus.cpp
+	btreeplus.h
+	btreeplus.cpp
 )
 
 add_executable(program program.cpp)
