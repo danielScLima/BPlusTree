@@ -1,5 +1,6 @@
 BPlus Tree
 ====================
+Building with Travis: [![Build Status](https://www.travis-ci.com/danielScLima/BPlusTree.svg?branch=master)](https://www.travis-ci.com/danielScLima/BPlusTree)
 
 This repository has a project with the implementation of a BPlus Tree.
 
